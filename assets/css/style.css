@@ -9,7 +9,7 @@
     color: teal;
 }
 .jumbotron {
-    background: url(/src/grill.png) center no-repeat;
+    background: url(/assets/css/grill.png) center no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
@@ -42,4 +42,23 @@ ul.d-flex.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
+}
+.gif-404 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: 32px 0;
+    text-align: center;
+}
+.gif-404 > img {
+    width: 300px;
+    margin: 32px auto;
+}
+.gif-404 > p > a {
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+.gif-404 > p > a:hover {
+    text-decoration: underline;
 }
