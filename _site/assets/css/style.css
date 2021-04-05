@@ -47,12 +47,12 @@ ul.d-flex.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
-    margin: 32px 0;
+    margin: 16px 0;
     text-align: center;
 }
 .gif-404 > img {
     width: 300px;
-    margin: 32px auto;
+    margin: 0 auto 32px auto;
 }
 .gif-404 > p > a {
     font-weight: 600;
@@ -60,5 +60,18 @@ ul.d-flex.navbar-nav.ms-auto.mb-2.mb-lg-0 {
     text-decoration: none;
 }
 .gif-404 > p > a:hover {
+    text-decoration: underline;
+}
+.gif-404 > p {
+    margin-bottom: 32px;
+}
+.about {
+    margin: 0 auto;
+}
+p.statements > a {
+    text-decoration: none;
+    color: #fff;
+}
+p.statements > a:hover {
     text-decoration: underline;
 }
