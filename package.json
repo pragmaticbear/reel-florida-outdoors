@@ -1,7 +1,6 @@
 {
   "name": "reel-fl",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,15 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pragmaticbear/rflo.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/pragmaticbear/rflo/issues"
+  },
+  "homepage": "https://gitlab.com/pragmaticbear/rflo#readme",
+  "description": ""
 }

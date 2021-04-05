@@ -37,3 +37,9 @@ ul.d-flex.navbar-nav.ms-auto.mb-2.mb-lg-0 {
 .ec-cart-widget {
     margin-left: 100%;
 }
+.pragmaticbear {
+    background: -webkit-linear-gradient(#fff, #008080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
