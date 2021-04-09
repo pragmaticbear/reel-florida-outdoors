@@ -1,12 +1,22 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/Rubik.woff2') format('woff2'),
+        url('/assets/fonts/Rubik.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    font-family: 'Rubik', Verdana, sans-serif;
+}
 .navbar-brand, .navbar-toggler-icon, a.nav-link.active, a.nav-link {
     color: white !important;
 }
 .navbar-brand {
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .navbar-brand > span {
-    color: teal;
+    color: #008080;
 }
 .jumbotron {
     background: url(/assets/css/grill.png) center no-repeat;
@@ -89,6 +99,34 @@ li.footerlink > a:hover {
 .navbar-collapse {
     text-align: center;
 }
+.scrollToTopBtn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all .5s ease
+  }
+      
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
 @media (max-width: 768px) {
     .jumbotron > h1 {
         font-size: 3em;

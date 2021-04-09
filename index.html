@@ -26,4 +26,28 @@ bgImage: /assets/img/water.png
                 </div>
             </div>
       </section>
+      <section>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12 shopnav insta">
+                      <h2>Check out our Instagram feed:</h2>
+                    <div id="instafeed" class="instagram-gallery-medium"></div>
+                  </div>
+              </div>
+          </div>
+      </section>
 </main>
+
+<script src="/assets/js/FCInstagram.js"></script>
+<script>
+jQuery.fn.FCInstagram.accessData = {
+    accessToken: "IGQVJYUmNwN0Jmb3dKYlJ0ZA2huLW5fel9QQ19Qa2lfNmx3Vm1oZAWhYU3UzaUJobjUwY3gwelIweDZAZAbEV4QWpQc2xUZAG1DaGVHcUVLSGhubTQ0NThQV1V3eTZAiZATZAlbGRiaEcyN3FvaEU3TzRla3ZAFQwZDZD", // Token
+};
+$('#instafeed').FCInstagram({
+    max: 4, // A number between 1 and 25 of photos to show. Default: 9
+    autoplay: true, // Set autoplay video: true/false. Default: false
+    complete: function () { // A callback function to execute after the display of the photos.
+        console.log('completed');
+    }
+});
+</script>

@@ -1,0 +1,50 @@
+﻿.insta {
+    text-align: center;
+}
+.instagram-gallery-medium {
+    width: 100%;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.instagram-gallery-medium > a {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 2px 14px 0 rgb(0 0 0 / 50%);
+}
+.instagram-gallery-medium > a:hover {
+    transform: scale(1.02);
+    transition: all .2s ease-in-out;
+}
+
+.instagram-gallery-medium > a > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 768px) {
+    .instagram-gallery-medium {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .instagram-gallery-medium > a {
+        padding: 6px;
+        margin: 6px auto;
+    }
+}
+
+/* END - MEDIUM */
