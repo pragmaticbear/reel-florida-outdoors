@@ -9,7 +9,7 @@
 * {
     font-family: 'Rubik', Verdana, sans-serif;
 }
-.navbar-brand, .navbar-toggler-icon, a.nav-link.active, a.nav-link {
+.navbar-brand, .navbar-toggler-icon {
     color: white !important;
 }
 .navbar-brand {
@@ -126,6 +126,40 @@ li.footerlink > a:hover {
   .showBtn {
     opacity: 1;
     transform: translateY(0)
+  }
+  a.link {
+    background:
+       linear-gradient(
+         to bottom, #57dada 0%,
+         #57dada 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+  }
+  
+  a.link:hover {
+    background-size: 4px 50px;
+  }
+  .nav-link {
+    background:
+       linear-gradient(
+         to bottom, #fc9d21 0%,
+         #fc9d21 100%
+       );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    text-decoration: none;
+    color: #fff !important;
+    transition: background-size .2s;
+  }
+  .nav-link:hover {
+    background-size: 4px 50px;
+    color: #000 !important;
   }
 @media (max-width: 768px) {
     .jumbotron > h1 {
