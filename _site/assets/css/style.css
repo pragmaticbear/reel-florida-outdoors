@@ -161,7 +161,22 @@ li.footerlink > a:hover {
     background-size: 4px 50px;
     color: #000 !important;
   }
-@media (max-width: 768px) {
+  @media (max-width: 998px) {
+    .nav-link {
+        background: none;
+        background-position: initial;
+        background-repeat: initial;
+        background-size: initial;
+        text-decoration: none;
+        color: #fff !important;
+        transition: none;
+      }
+      .nav-link:hover {
+        background-size: initial;
+        color: #fff !important;
+      }
+  }
+@media (max-width: 767px) {
     .jumbotron > h1 {
         font-size: 3em;
         text-align: center;
