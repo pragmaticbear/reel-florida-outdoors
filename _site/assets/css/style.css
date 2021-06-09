@@ -161,6 +161,31 @@ li.footerlink > a:hover {
     background-size: 4px 50px;
     color: #000 !important;
   }
+  #consent-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: auto;
+    opacity: 0.8;
+    background-color: #fff;
+    animation: fadein .5s;
+}
+#consent-popup > p {
+    padding: 12px;
+}
+.row.consent {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: row;
+}
+.hidden {
+    display: none;
+}
+.contatiner-fluid.consent-container {
+    padding: 12px;
+}
   @media (max-width: 998px) {
     .nav-link {
         background: none;
@@ -194,4 +219,9 @@ li.footerlink > a:hover {
     html#ecwid_html body#ecwid_body .ec-size:not(.ec-size--xs) .ec-store .ec-footer__row[data-items="3"] {
         flex-wrap: nowrap !important;
     }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
 }
