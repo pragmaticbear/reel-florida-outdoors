@@ -95,6 +95,22 @@ a.breadcrumbs__link.ec-link.ec-link--muted.breadcrumbs__link--last {
 a.breadcrumbs__link.ec-link.ec-link--muted.breadcrumbs__link--last:hover {
     background-size: 4px 50px !important;
 }   
+a.breadcrumbs__link.ec-link.ec-link--muted {
+    color: #000 !important;
+    background:
+       linear-gradient(
+         to bottom, #57dada 0%,
+         #57dada 100%
+       ) !important;
+    background-position: 0 100% !important;
+    background-repeat: repeat-x !important;
+    background-size: 4px 4px !important;
+    text-decoration: none !important;
+    transition: background-size .2s !important;
+} 
+a.breadcrumbs__link.ec-link.ec-link--muted:hover {
+    background-size: 4px 50px !important;
+} 
 div.ec-breadcrumbs::before {
     content: "\2190";
     font-size: 17px;
